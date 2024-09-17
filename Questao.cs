@@ -57,7 +57,12 @@ namespace ShowDoOvaoo;
         return buttonrep1,
         else if( RespostaR == 2)
         return buttonrep2,
-        else if()k
+        else if(RespostaR ==3)
+        return buttonrep3,
+        else if(RespostaR ==4)
+        return buttonrep4,
+        else if(RespostaR ==5)
+        return buttonrep5,
      }
    }
   
