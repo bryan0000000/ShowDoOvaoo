@@ -20,7 +20,7 @@ namespace ShowDoOvaoo
     private Button buttonrep4;
     private Button buttonrep5;
 
-    public void desenhar()
+    public void Desenhar()
     {
       labelPergunta.Text = questao;
       buttonrep1.Text = resposta1;
@@ -47,7 +47,7 @@ namespace ShowDoOvaoo
 
     public bool verificaresposdta(int RespostaC)
     {
-      if (RespostaC == RespostaR)
+      if (RespostaR == RespostaC)
       {
         var bot = QualBot(RespostaC);
         bot.BackgroundColor = Colors.Green;
