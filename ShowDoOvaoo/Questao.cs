@@ -19,7 +19,6 @@ namespace ShowDoOvaoo
     private Button buttonrep3;
     private Button buttonrep4;
     private Button buttonrep5;
-
     public void Desenhar()
     {
       labelPergunta.Text = questao;
@@ -79,7 +78,7 @@ namespace ShowDoOvaoo
 
 
 
-//ublic void configurar(Label per,Button bot1,Button bot2,Button bot3,Button bot4,Button bot5); 
+//public void configurar(Label per,Button bot1,Button bot2,Button bot3,Button bot4,Button bot5); 
 // {
 //  labelPergunta=per;
 //  buttonrep=bot1;
