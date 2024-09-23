@@ -19,7 +19,7 @@ namespace ShowDoOvaoo
     private Button buttonrep3;
     private Button buttonrep4;
     private Button buttonrep5;
-    public void Desenhar()
+    public void Desenhar( Label labelPergunta,Button buttonrep1,Button buttonrep2,Button buttonrep3,Button buttonrep4,Button buttonrep5)
     {
       labelPergunta.Text = questao;
       buttonrep1.Text = resposta1;
