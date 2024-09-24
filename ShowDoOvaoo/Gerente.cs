@@ -21,9 +21,9 @@ namespace ShowDoOvaoo
      
      Questao QuestaoAtual;
 
-     public Gerente(Label per, Button bot1, Button bot2, Button bot3, Button bot4, Button bot5)
+     public Gerente(Label questao, Button resposta1, Button resposta2, Button resposta3, Button resposta4, Button resposta5)
      {
-        CriarPergunta( per,  bot1,  bot2,  bot3,  bot4,  bot5);
+        CriarPergunta( questao,  resposta1,  resposta2,  resposta3,  resposta4,  resposta5);
      }
      
      void CriarPergunta(Label questao, Button resposta1, Button resposta2, Button resposta3, Button resposta4, Button resposta5)
@@ -41,17 +41,19 @@ namespace ShowDoOvaoo
         ProximaQuestao();
      }
 
-       async void ProximaQuestao()
-       {
-         
-          var NumAlert =Random.Shared.Next(0,ListaQuestao.Count);
-          while(ListasQuestaoRespondidas.Contains(NumAlert));
-          NumAlert=Random.Shared.Next(0,ListaQuestao.Count);
-          ListasQuestaoRespondidas.Add(NumAlert);
-          QuestaoAtual=ListaQuestao[NumAlert];
-          QuestaoAtual.Desenhar();
-     
-       }   
+       public void ProximaQuestao()
+        {
+
+            var RandomNumber = Random.Shared.Next(0, ListaQuestao.Count);
+            while (ListasQuestaoRespondidas.Contains(RandomNumber))
+            {
+                RandomNumber = Random.Shared.Next(0, ListaQuestao.Count);
+            }
+            ListasQuestaoRespondidas.Add(RandomNumber);
+            QuestaoAtual = ListaQuestao[RandomNumber];
+            //QuestaoAtual.Desenhar();
+        }
+
        public async void verificaresposdta(int RespostaR)
        {
          

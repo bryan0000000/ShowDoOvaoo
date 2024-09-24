@@ -9,6 +9,7 @@
       <Grid>
      
         <Grid.RowDefinitions>
+          <RowDefinition Height="50"/>
           <RowDefinition Height="300"/>
           <RowDefinition Height="*"/>
           <RowDefinition Height="*"/>
@@ -24,7 +25,23 @@
           <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-           
+           <Label 
+                   Text="f  F"
+                  
+                   Grid.ColumnSpan="2"
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   Grid.Row="0" />
+
+           <Label 
+                   Text="F  "
+                   
+                   Grid.Column="2"
+                   FontSize="20"
+                   HorizontalTextAlignment="Center"
+                   Grid.Row="0" />
+
+
      
             <Label 
                    Text=""
@@ -38,6 +55,7 @@
                    Grid.ColumnSpan="3"
                    TextColor="Pink"
                    x:Name="resposta1"
+                   Clicked="botal1"
                    Grid.Row="2"
                    Margin="0,0,0,5"
                    BackgroundColor="#55dde3ed"
@@ -46,6 +64,7 @@
             <Button
                    Grid.ColumnSpan="3"
                    x:Name="resposta2"
+                   Clicked="but002"
                    Grid.Row="3"
                    Margin="0,0,0,5"
                    BackgroundColor="#55dde3ed" 
@@ -54,6 +73,7 @@
             <Button
                    Grid.ColumnSpan="3"
                    x:Name="resposta3"
+                   Clicked="but003"
                    Grid.Row="4"
                    Margin="0,0,0,5"
                    BackgroundColor="#55dde3ed" 
@@ -62,6 +82,7 @@
             <Button
                    Grid.ColumnSpan="3"
                    x:Name="resposta4"
+                   Clicked="but004" 
                    Grid.Row="5"
                    Margin="0,0,0,5"
                    BackgroundColor="#55dde3ed" 
@@ -70,6 +91,7 @@
             <Button
                    Grid.ColumnSpan="3"
                    x:Name="resposta5"
+                   Clicked="but005" 
                    Grid.Row="6"
                    Margin="0,0,0,5"
                    BackgroundColor="#55dde3ed" 

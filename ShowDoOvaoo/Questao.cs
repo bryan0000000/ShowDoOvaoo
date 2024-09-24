@@ -2,18 +2,18 @@ namespace ShowDoOvaoo
 {
   public class Questao
   {
-    public string questao { get; set; }
+    public string? questao { get; set; }
 
     //---------------------------------------------------------------
-    public string resposta1 { get; set; }
-    public string resposta2 { get; set; }
-    public string resposta3 { get; set; }
+    public string? resposta1 { get; set; }
+    public string? resposta2 { get; set; }
+    public string? resposta3 { get; set; }
     public string resposta4 { get; set; }
-    public string resposta5 { get; set; }
-    public int NivelDaPergunta;
-    public int RespostaR;
-    public int RespostaC;
-    private Label labelPergunta;
+    public string? resposta5 { get; set; }
+    public int? NivelDaPergunta; 
+    public int? RespostaR;
+    public int? RespostaC;
+    public Label labelPergunta;
     private Button buttonrep1;
     private Button buttonrep2;
     private Button buttonrep3;
