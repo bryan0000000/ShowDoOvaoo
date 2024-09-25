@@ -55,7 +55,7 @@
                    Grid.ColumnSpan="3"
                    TextColor="Pink"
                    x:Name="resposta1"
-                   Clicked="botal1"
+                   Clicked="but1"
                    Grid.Row="2"
                    Margin="0,0,0,5"
                    BackgroundColor="#55dde3ed"

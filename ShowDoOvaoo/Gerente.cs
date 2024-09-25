@@ -26,10 +26,10 @@ namespace ShowDoOvaoo
         CriarPergunta( questao,  resposta1,  resposta2,  resposta3,  resposta4,  resposta5);
      }
      
-     void CriarPergunta(Label questao, Button resposta1, Button resposta2, Button resposta3, Button resposta4, Button resposta5)
+     void CriarPergunta(Label labelPergunta, Button btnResposta01, Button btnResposta02, Button btnResposta03, Button btnResposta04, Button btnResposta05)
      {
         var Q1 = new Questao();
-        Q1.Desenhar( questao, resposta1, resposta2, resposta3, resposta4, resposta5);
+        Q1.ConfigurarDesenho( labelPergunta, btnResposta01, btnResposta02, btnResposta03, btnResposta04, btnResposta05);
         Q1.questao = "Quanto é 15+15?";
         Q1.resposta1 ="1";
         Q1.resposta2 ="16";
@@ -51,7 +51,7 @@ namespace ShowDoOvaoo
             }
             ListasQuestaoRespondidas.Add(RandomNumber);
             QuestaoAtual = ListaQuestao[RandomNumber];
-            //QuestaoAtual.Desenhar();
+            QuestaoAtual.Desenhar();
         }
 
        public async void verificaresposdta(int RespostaR)

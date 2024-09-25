@@ -19,7 +19,18 @@ namespace ShowDoOvaoo
     private Button buttonrep3;
     private Button buttonrep4;
     private Button buttonrep5;
-    public void Desenhar( Label labelPergunta,Button buttonrep1,Button buttonrep2,Button buttonrep3,Button buttonrep4,Button buttonrep5)
+
+  public void ConfigurarDesenho(Label labelPergunta, Button btnResposta01, Button btnResposta02, Button btnResposta03, Button btnResposta04, Button btnResposta05)
+  {
+    this.labelPergunta = labelPergunta;
+    this.buttonrep1 = btnResposta01;
+    this.buttonrep2 = btnResposta02;
+    this.buttonrep3 = btnResposta03;
+    this.buttonrep4 = btnResposta04;
+    this.buttonrep5 = btnResposta05;
+  }
+
+    public void Desenhar( )
     {
       labelPergunta.Text = questao;
       buttonrep1.Text = resposta1;
