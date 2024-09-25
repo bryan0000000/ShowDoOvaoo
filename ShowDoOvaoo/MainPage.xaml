@@ -27,15 +27,15 @@
 
            <Label 
                    Text="f  F"
-                  
-                   Grid.ColumnSpan="2"
+                   Grid.ColumnSpan="1"
                    FontSize="20"
+                   x:Name="NivelDaPergunta"
                    HorizontalTextAlignment="Center"
                    Grid.Row="0" />
 
            <Label 
                    Text="F  "
-                   
+                   x:Name="NivelAtual"
                    Grid.Column="2"
                    FontSize="20"
                    HorizontalTextAlignment="Center"

@@ -20,7 +20,7 @@ namespace ShowDoOvaoo
     private Button buttonrep4;
     private Button buttonrep5;
 
-  public void ConfigurarDesenho(Label labelPergunta, Button btnResposta01, Button btnResposta02, Button btnResposta03, Button btnResposta04, Button btnResposta05)
+  public void ConfigurarDesenho(Label labelPergunta,Label NivelDaPergunta, Button btnResposta01, Button btnResposta02, Button btnResposta03, Button btnResposta04, Button btnResposta05 )
   {
     this.labelPergunta = labelPergunta;
     this.buttonrep1 = btnResposta01;
@@ -28,6 +28,7 @@ namespace ShowDoOvaoo
     this.buttonrep3 = btnResposta03;
     this.buttonrep4 = btnResposta04;
     this.buttonrep5 = btnResposta05;
+    this.NivelDaPergunta = NivelDaPergunta;
   }
 
     public void Desenhar( )
