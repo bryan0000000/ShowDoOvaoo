@@ -10,7 +10,7 @@ namespace ShowDoOvaoo
     public string? resposta3 { get; set; }
     public string resposta4 { get; set; }
     public string? resposta5 { get; set; }
-    public int? NivelDaPergunta; 
+    public int NivelDaPergunta; 
     public int? RespostaR;
     public int? RespostaC;
     public Label labelPergunta;
@@ -20,15 +20,15 @@ namespace ShowDoOvaoo
     private Button buttonrep4;
     private Button buttonrep5;
 
-  public void ConfigurarDesenho(Label labelPergunta,Label NivelDaPergunta, Button btnResposta01, Button btnResposta02, Button btnResposta03, Button btnResposta04, Button btnResposta05 )
+  public void ConfigurarDesenho(Label labelPergunta,  Button btnResposta01, Button btnResposta02, Button btnResposta03, Button btnResposta04, Button btnResposta05 )
   {
-    this.labelPergunta = labelPergunta;
-    this.buttonrep1 = btnResposta01;
-    this.buttonrep2 = btnResposta02;
-    this.buttonrep3 = btnResposta03;
-    this.buttonrep4 = btnResposta04;
-    this.buttonrep5 = btnResposta05;
-    this.NivelDaPergunta = NivelDaPergunta;
+    labelPergunta = labelPergunta;
+    buttonrep1 = btnResposta01;
+    buttonrep2 = btnResposta02;
+    buttonrep3 = btnResposta03;
+    buttonrep4 = btnResposta04;
+    buttonrep5 = btnResposta05;
+  
   }
 
     public void Desenhar( )
