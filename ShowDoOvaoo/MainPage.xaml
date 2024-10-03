@@ -45,7 +45,7 @@
      
             <Label 
                    Text=""
-                   x:Name="questao"
+                   x:Name="labelPerguntaa"
                    Grid.ColumnSpan="3"
                    FontSize="20"
                    HorizontalTextAlignment="Center"
@@ -54,8 +54,8 @@
             <Button
                    Grid.ColumnSpan="3"
                    TextColor="Pink"
-                   x:Name="resposta1"
-                   Clicked="but1"
+                   x:Name="btnResposta01"
+                   Clicked="btnResposta001"
                    Grid.Row="2"
                    Margin="0,0,0,5"
                    BackgroundColor="#55dde3ed"
@@ -63,8 +63,8 @@
 
             <Button
                    Grid.ColumnSpan="3"
-                   x:Name="resposta2"
-                   Clicked="but002"
+                   x:Name="btnResposta02"
+                   Clicked="btnResposta002"
                    Grid.Row="3"
                    Margin="0,0,0,5"
                    BackgroundColor="#55dde3ed" 
@@ -72,8 +72,8 @@
 
             <Button
                    Grid.ColumnSpan="3"
-                   x:Name="resposta3"
-                   Clicked="but003"
+                   x:Name="btnResposta03"
+                   Clicked="btnResposta003"
                    Grid.Row="4"
                    Margin="0,0,0,5"
                    BackgroundColor="#55dde3ed" 
@@ -81,8 +81,8 @@
 
             <Button
                    Grid.ColumnSpan="3"
-                   x:Name="resposta4"
-                   Clicked="but004" 
+                   x:Name="btnResposta04"
+                   Clicked="btnResposta004" 
                    Grid.Row="5"
                    Margin="0,0,0,5"
                    BackgroundColor="#55dde3ed" 
@@ -90,8 +90,8 @@
 
             <Button
                    Grid.ColumnSpan="3"
-                   x:Name="resposta5"
-                   Clicked="but005" 
+                   x:Name="btnResposta05"
+                   Clicked="btnResposta005" 
                    Grid.Row="6"
                    Margin="0,0,0,5"
                    BackgroundColor="#55dde3ed" 

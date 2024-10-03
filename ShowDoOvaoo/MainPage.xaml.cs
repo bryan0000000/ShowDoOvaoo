@@ -8,27 +8,27 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 		
-		gerente = new Gerente( questao,  resposta1,  resposta2,  resposta3,  resposta4,  resposta5);
-		gerente.ProximaQuestao();
+		gerente = new Gerente( labelPerguntaa,  btnResposta01,  btnResposta02,  btnResposta03,  btnResposta04,  btnResposta05);
+		
 	}
-              void but1 (object sender, EventArgs e)
+              void btnResposta001 (object sender, EventArgs args)
             {
               gerente!.verificaresposdta(1);
 		    }
 
-			  void but002 (object sender, EventArgs e)
+			  void btnResposta002 (object sender, EventArgs args)
             {
               gerente!.verificaresposdta(2);
 		    }
-			  void but003 (object sender, EventArgs e)
+			  void btnResposta003 (object sender, EventArgs args)
             {
               gerente!.verificaresposdta(3);
 		    }
-			  void but004 (object sender, EventArgs e)
+			  void btnResposta004 (object sender, EventArgs args)
             {
               gerente!.verificaresposdta(4);
 		    }
-			  void but005 (object sender, EventArgs e)
+			  void btnResposta005 (object sender, EventArgs args)
             {
               gerente!.verificaresposdta(5);
 		    }			
