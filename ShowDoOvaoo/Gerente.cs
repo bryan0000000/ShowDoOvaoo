@@ -38,6 +38,53 @@ namespace ShowDoOvaoo
         Q1.RespostaC = 4 ;
         ListaQuestao.Add(Q1);
         ProximaQuestao();
+
+        var Q2 = new Questao();
+        Q2.ConfigurarDesenho( labelPerguntaa, btnResposta01, btnResposta02, btnResposta03, btnResposta04, btnResposta05) ;
+        Q2.questao = "faz mau tomar banho?";
+        Q2.resposta1 ="sim";
+        Q2.resposta2 ="não";
+        Q2.resposta3 ="talvez";
+        Q2.resposta4 ="Q?";
+        Q2.resposta5 ="analise";
+        Q2.RespostaC = 5 ;
+        ListaQuestao.Add(Q2);
+        ProximaQuestao();
+
+        var Q3 = new Questao();
+        Q3.ConfigurarDesenho( labelPerguntaa, btnResposta01, btnResposta02, btnResposta03, btnResposta04, btnResposta05) ;
+        Q3.questao = "cod e melhor que fortinait?";
+        Q3.resposta1 ="obvio";
+        Q3.resposta2 ="não";
+        Q3.resposta3 ="como é amigo";
+        Q3.resposta4 ="não quero dizer";
+        Q3.resposta5 ="meu ovo";
+        Q3.RespostaC = 1 ;
+        ListaQuestao.Add(Q3);
+        ProximaQuestao();
+
+        var Q4 = new Questao();
+        Q4.ConfigurarDesenho( labelPerguntaa, btnResposta01, btnResposta02, btnResposta03, btnResposta04, btnResposta05) ;
+        Q4.questao = "se um cara te chama par uma briga, oque tu faiz?";
+        Q4.resposta1 ="vo pra cima";
+        Q4.resposta2 ="corro";
+        Q4.resposta3 ="puxo um oitao";
+        Q4.resposta4 ="falo que sei capoeira";
+        Q4.resposta5 ="chamo meus manos";
+        Q4.RespostaC = 3 ;
+        ListaQuestao.Add(Q4);
+        ProximaQuestao();
+
+
+
+
+
+
+
+
+
+
+
      }
 
        public void ProximaQuestao()
@@ -45,9 +92,7 @@ namespace ShowDoOvaoo
 
             var RandomNumber = Random.Shared.Next(0, ListaQuestao.Count);
             while (ListasQuestaoRespondidas.Contains(RandomNumber))
-            {
-                RandomNumber = Random.Shared.Next(0, ListaQuestao.Count);
-            }
+            
             ListasQuestaoRespondidas.Add(RandomNumber);
             QuestaoAtual = ListaQuestao[RandomNumber];
             QuestaoAtual.Desenhar();
@@ -61,7 +106,9 @@ namespace ShowDoOvaoo
          {
             await Task.Delay(100);
             AdicionarPontuacao(NivelAtual);
-            NivelAtual ++;
+             if (NivelAtual == 10)
+                await App.Current.MainPage.DisplayAlert("VOCÊ ACERTOU TUDO!", "PARABÉNS!", "OK");
+            ProximaQuestao();
             ProximaQuestao();
          }
          else

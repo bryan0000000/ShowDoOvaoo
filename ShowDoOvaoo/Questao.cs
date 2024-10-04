@@ -71,16 +71,17 @@ namespace ShowDoOvaoo
            this.buttonrep5!.TextColor       = Colors.White;
     }
 
-    public bool verificaresposdta(int RespostaC)
+    public bool verificaresposdta(int RespostaR)
     {
-      if (RespostaR == RespostaC)
+      if (RespostaC == RespostaR)
       {
-        var bot = QualBot(RespostaC);
+        var bot = QualBot(RespostaR);
         bot.BackgroundColor = Colors.Green;
         return true;
       }
       else
       {
+       
         return false;
       }
     }
