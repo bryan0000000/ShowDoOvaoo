@@ -97,12 +97,13 @@
                    BackgroundColor="#55dde3ed" 
                    Text=""/>
        
-             <Button
+             <Button x:Name="puladoido"
                    Grid.Column="0"
                    Grid.Row="7"
                    Margin="5,2,0,5"
                    BackgroundColor="#55dde3ed" 
-                   Text=""/>
+                   Text="pular:3X"
+                   Clicked="btnpular"/>
             
              <Button
                    Grid.Column="1"
